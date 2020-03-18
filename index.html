@@ -20,11 +20,7 @@
       src="https://kit.fontawesome.com/05e4f5b4ac.js"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="/assets/css/style.css"
-  />
+    
   <link
     rel="stylesheet"
     type="text/css"
@@ -49,17 +45,11 @@
         <li>
           <a
             class="nav-item nav-link hvr-underline-from-center"
-            href="resume.html"
+            href="https://drive.google.com/file/d/1oaP_nt6CO6l7ULMhPXKjC1_6hp7ScY2j/view?usp=sharing"
             >Resume</a
           >
         </li>
-        <li>
-          <a
-            class="nav-item nav-link hvr-underline-from-center"
-            href="contact.html"
-            >Contact</a
-          >
-        </li>
+        
       </ul>
     </header>
 
@@ -71,7 +61,7 @@
       <div class="introduction mb-5 row">
         <div class="col-sm-5">
           <img
-            src="../Bootstrap-Portfolio/assets/images/WooFFTEbw.png"
+            src="/assets/images/WooFFTEbw.png"
             width="100%"
             height="auto"
           />
@@ -155,7 +145,7 @@
         <div class="row mb-5 justify-content-center">
           <div class="col-sm-5 mb-3">
             <img
-              src="../Bootstrap-Portfolio/assets/images/bamazonlogo.png"
+              src="/assets/images/bamazonlogo.png"
               class="card-img"
               alt="Bamazon CLI Logo"
             />
@@ -178,7 +168,7 @@
         <div class="row mb-5 justify-content-end">
           <div class="col-sm-5 mb-3">
             <img
-              src="../Bootstrap-Portfolio/assets/images/Liri.jpg"
+              src="/assets/images/Liri.jpg"
               class="card-img"
               alt="LIRI CLI Logo"
             />
@@ -202,7 +192,7 @@
         <div class="row mb-5 justify-content-start">
           <div class="col-sm-5 mb-3">
             <img
-              src="../Bootstrap-Portfolio/assets/images/229879.jpg"
+              src="/assets/images/229879.jpg"
               class="card-img"
               alt="Ninetails next to Pokeball image"
             />
@@ -225,7 +215,7 @@
         <div class="row ml-4 mb-5 justify-content-end">
           <div class="col-sm-5 mb-3">
             <img
-              src="../Bootstrap-Portfolio/assets/images/avatar-the-last-airbender-wallpapers-1920x1080-for-ipad-2.jpg"
+              src="/assets/images/avatar-the-last-airbender-wallpapers-1920x1080-for-ipad-2.jpg"
               class="card-img-top"
               alt="Image of Avatar Aang and the gang"
             />
@@ -283,7 +273,7 @@
         <div class="row pr-5 mb-5 justify-content-start">
           <div class="col-sm-5 mb-3">
             <img
-              src="../Bootstrap-Portfolio/assets/images/michal-parzuchowski-dmH3NWhYTHQ-unsplash.jpg"
+              src="/assets/images/michal-parzuchowski-dmH3NWhYTHQ-unsplash.jpg"
               class="card-img-top"
               alt="Train Station image"
             />
@@ -321,7 +311,7 @@
 
       <div class="row mb-5 justify-content-center" id="mini-resume">
         <div class="col-sm-8 text-center">
-          <h2 class="mb-3">Knowledge and Skills</h2>
+          <h2 class="mb-3">Technology and Skills</h2>
           <p>
             I currently specialize in front-end web development, mainly using my
             knowledge in JavaScript, jQuery, HTML5, and CSS3 to complete
@@ -361,7 +351,63 @@
         <div class="col-sm-6">
           <h2>Reach Out to Me</h2>
 
-          <form>
+          <form
+          class="contact-form cust-form"
+          method="POST"
+          action="send"
+        >
+          <div>
+            <label class="message-name" htmlFor="message-name">
+              Your Name
+            </label>
+            <input
+              name="name"
+              class="message-name cpYcEZ border-bottom"
+              type="text"
+              placeholder="Your Name"
+              value
+              required
+            />
+          </div>
+
+          <div>
+            <label class="message-email" htmlFor="message-email">
+              Your Email
+            </label>
+            <input
+              
+              name="email"
+              class="message-email cpYcEZ border-bottom"
+              type="email"
+              placeholder="your@email.com"
+              required
+              value
+            />
+          </div>
+
+          <div>
+            <label class="message" htmlFor="message-input">
+              Your Message
+            </label>
+            <textarea
+              
+              name="message"
+              class="message-input eJFNDT border-bottom"
+              type="text"
+              placeholder="Please write your message here"
+              value
+              required
+            ></textarea>
+          </div>
+
+          <div className="button-container">
+            <button type="submit" class="button button-primary ibSQGl">
+              Send
+            </button>
+            
+          </div>
+        </form>
+          <!-- <form>
             <div class="form-group">
               <label for="formGroupExampleInput">Full Name</label>
               <input
@@ -392,7 +438,7 @@
             <div class="col-sm-12">
               <button type="submit" class="btn btn-secondary">Send</button>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
 
@@ -411,17 +457,7 @@
             ></a>
           </span>
 
-          <span>
-            <a href="https://www.facebook.com/maserall.marcelin"
-              ><i class="fab fa-facebook-square fa-5x mx-4"></i
-            ></a>
-          </span>
-
-          <span>
-            <a href="https://www.instagram.com/woo.marc/"
-              ><i class="fab fa-instagram fa-5x mx-4"></i
-            ></a>
-          </span>
+          
         </div>
       </div>
     </div>
