@@ -187,6 +187,7 @@ iframe {
 }
 
 .contact-info {
+  display: grid;
   align-items: center;
 }
 
@@ -503,5 +504,56 @@ a:visited {
   }
   .menu-items {
     display: grid;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(1050px, 1fr));
+  }
+  .cont {
+    display: grid;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  .intro h2 {
+    text-align: center;
+  }
+
+  .creative {
+    display: grid;
+    text-align: center;
+  }
+
+  #mini-resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  #mini-resume h2 {
+    text-align: center;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  .contact-info {
+    display: grid;
+    grid-column: span 2;
+    align-items: center;
+  }
+  .contact-form {
+    display: grid;
+    grid-column: span 2;
   }
 }
