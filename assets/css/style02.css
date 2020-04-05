@@ -443,3 +443,65 @@ a:hover {
 a:visited {
   color: #dddddd;
 }
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .cont {
+    display: grid;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .intro h2 {
+    text-align: center;
+  }
+
+  .creative {
+    text-align: center;
+  }
+
+  #mini-resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  #mini-resume h2 {
+    text-align: center;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  .contact-info {
+    display: grid;
+    grid-column: span 2;
+    align-items: center;
+  }
+  .contact-form {
+    display: grid;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu-container {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+  .title {
+    display: grid;
+    grid-column: span 2;
+  }
+  .menu-items {
+    display: grid;
+  }
+}
