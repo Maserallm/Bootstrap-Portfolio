@@ -91,3 +91,28 @@ a {
 .nav-item {
   padding: 10px;
 }
+
+/* Introduction */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  /* align-content: center; */
+  margin: 0 10px;
+}
+
+.intro div {
+  display: grid;
+  align-items: center;
+}
+
+.creative {
+  display: grid;
+  justify-items: center;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  font-weight: 500;
+  font-size: 30px;
+}
