@@ -20,6 +20,8 @@
       src="https://kit.fontawesome.com/05e4f5b4ac.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
     
   <link
     rel="stylesheet"
@@ -30,7 +32,7 @@
 
   <body>
     <header class="m-2 pb-3">
-      <h4 class="px-3 hvr-shutter-out-vertical font-italic" id="#name-header">
+      <h4 class="px-3 hvr-shutter-out-vertical " id="#name-header">
         <a href="index.html"><u>Maserall Marcelin</u></a>
       </h4>
 
@@ -53,8 +55,10 @@
       </ul>
     </header>
 
-    <div class="jumbotron text-center">
-      <h1>CREATIVE WEB DEVELOPER / DESIGNER</h1>
+    <div class= "text-center">
+      <section class="my-title">
+        <h1>CREATIVE WEB DEVELOPER / DESIGNER</h1>
+      </section>
     </div>
 
     <div class="container">
@@ -99,8 +103,8 @@
           <h2 class="mb-3">Technical Skills and Programs</h2>
           <p>
             I currently specialize in front-end web development, mainly using my
-            knowledge in JavaScript, jQuery, HTML5, and CSS3 to complete
-            projects. Have six years of analytical work within warehouse
+            knowledge in JavaScript, React, HTML5, MongoDB, and CSS3 to complete
+            projects. I have six years of analytical work within warehouse
             managagement systems (WMS) and performing agile-like tasks on week
             to week basis. Seeking to provide effective simple solutions to
             users through UI/UX and have fun in the process.
@@ -108,9 +112,8 @@
         </div>
       </div>
 
-      <div class="portfolio">
-        <div class="row mb-5 justify-content-start">
-          <div class="col-sm-5 mb-3">
+      <section class="portfolio">
+          <div class="card-with-img">
             <a href="https://enigmatic-forest-38467.herokuapp.com/">
               <img
                 src="assets/images/jc-gellidon-XmYSlYrupL8-unsplash.jpg"
@@ -119,7 +122,7 @@
               />
             </a>
           </div>
-          <div class="col-sm-4 mt-3 ml-5">
+          <div class="card-with-text p-5">
             <h2 class="mb-3">
               <a href="https://enigmatic-forest-38467.herokuapp.com/">
                 <u>The Sport Update</u>
@@ -133,11 +136,26 @@
               Welcome to The Sports Update Scraper application! Here users can check out the latest sports news from all over the world. 
             </p>
           </div>
-        </div>
+        </section>
 
-      <div class="portfolio">
-        <div class="row mb-5 justify-content-end">
-          <div class="col-sm-5 mb-3">
+      <section class="portfolio">
+        <div class="card-with-text p-5">
+          <h2 class="mb-3">
+            <a href="https://damp-badlands-48147.herokuapp…">
+              <u>unLEASHED</u>
+            </a>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-js"></i>
+            <i class="fas fa-server"></i>
+          </h2>
+          <p>
+            This is a full-stack application where users who are looking for
+            all things pup related can come and find information on breeders,
+            events, and doggy adoptions/resues.
+          </p>
+        </div>
+        
+          <div class="card-with-img">
             <a href="https://damp-badlands-48147.herokuapp…">
               <img
                 src="https://static.thenounproject.com/png/1539636-200.png"
@@ -147,25 +165,10 @@
               />
             </a>
           </div>
-          <div class="col-sm-4 mt-3 ml-5">
-            <h2 class="mb-3">
-              <a href="https://damp-badlands-48147.herokuapp…">
-                <u>unLEASHED</u>
-              </a>
-              <i class="fab fa-node-js"></i>
-              <i class="fab fa-js"></i>
-              <i class="fas fa-server"></i>
-            </h2>
-            <p>
-              This is a full-stack application where users who are looking for
-              all things pup related can come and find information on breeders,
-              events, and doggy adoptions/resues.
-            </p>
-          </div>
-        </div>
-
-        <div class="row mb-5 justify-content-center">
-          <div class="col-sm-5 mb-3">
+        </section>
+        
+        <section class="portfolio">
+          <div class="card-with-img">
               <a href="https://github.com/Maserallm/Node.js-MySQL">
                 <img
                   src="/assets/images/bamazonlogo.png"
@@ -174,48 +177,59 @@
                 />
                 </a>
           </div>
-          <div class="col-sm-4 mt-3 ml-5">
-            <h2 class="mb-3">
-              <a href="https://github.com/Maserallm/Node.js-MySQL">
-                <u>Bamazon Node-MySQL CLI App</u>
-              </a>
-              <i class="fab fa-node-js"></i>
-              <i class="fab fa-js"></i>
-              <i class="fas fa-server"></i>
-            </h2>
-            <p>
-              This is a command line application that allows users to select
-              product from the "Bamazon" store through server side tools like
-              node.js and MySQL.
-            </p>
+
+          <div class="card-with-text p-5">
+              <h2 class="mb-3">
+                  <a href="https://github.com/Maserallm/Node.js-MySQL">
+                    <u>Bamazon Node-MySQL CLI App</u>
+                  </a>
+                  <i class="fab fa-node-js"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fas fa-server"></i>
+                </h2>
+                <p>
+                  This is a command line application that allows users to select
+                  product from the "Bamazon" store through server side tools like
+                  node.js and MySQL.
+                </p>
           </div>
-        </div>
+          </section>
+
+          <section class="portfolio">
+              <div class="card-with-text p-5">
+                  <h2 class="mb-3">
+                      <a href="https://github.com/Maserallm/LIRI-Bot">
+                        <u>LIRI CLI App</u>
+                        </a>
+                    <i class="fab fa-node-js"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fas fa-server"></i>
+                  </h2>
+                  <p>
+                    This command line application allows users to search spotify for
+                    their favorite songs; pull up information about these songs like
+                    the album the song was on, the artist that are on there, and even
+                    a link to preview the song.
+                  </p>
+              </div>
+              
+                <div class="card-with-img">
+                    <a href="https://github.com/Maserallm/LIRI-Bot">
+                      <img
+                        src="/assets/images/Liri.jpg"
+                        class="card-img"
+                        alt="LIRI CLI Logo"
+                      />
+                      </a>
+                </div>
+              </section>
 
         <div class="row mb-5 justify-content-end">
           <div class="col-sm-5 mb-3">
-              <a href="https://github.com/Maserallm/LIRI-Bot">
-                <img
-                  src="/assets/images/Liri.jpg"
-                  class="card-img"
-                  alt="LIRI CLI Logo"
-                />
-                </a>
+              
           </div>
           <div class="col-sm-4 mt-3 ml-5">
-            <h2 class="mb-3">
-                <a href="https://github.com/Maserallm/LIRI-Bot">
-                  <u>LIRI CLI App</u>
-                  </a>
-              <i class="fab fa-node-js"></i>
-              <i class="fab fa-js"></i>
-              <i class="fas fa-server"></i>
-            </h2>
-            <p>
-              This command line application allows users to search spotify for
-              their favorite songs; pull up information about these songs like
-              the album the song was on, the artist that are on there, and even
-              a link to preview the song.
-            </p>
+           
           </div>
         </div>
 
@@ -251,7 +265,7 @@
               <a href="https://maserallm.github.io/unit-4-game/">
                 <img
                   src="/assets/images/avatar-the-last-airbender-wallpapers-1920x1080-for-ipad-2.jpg"
-                  class="card-img-top"
+                  class="card-img"
                   alt="Image of Avatar Aang and the gang"
                 />
                 </a>
@@ -461,5 +475,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/PixiPlugin.min.js"></script>
+    <script type="text/js" src="/assets/js/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -6,6 +8,7 @@
 body {
   background-color: rgb(31, 30, 30);
   color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -16,9 +19,17 @@ button {
   color: white;
 }
 
-img,
+.card-img,
 iframe {
   border: white solid;
+  width: 100%;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .hvr-underline-from-center {
@@ -102,10 +113,22 @@ h2 {
   /* text-decoration: underline; */
 }
 
+.my-title {
+  background-color: whitesmoke;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
 #name-header {
   color: white;
   background: rgba(93, 99, 99, 0.367);
-  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 1000;
   padding: 10px 10px;
   margin-top: 5px;
   margin-left: 5px;
@@ -234,9 +257,9 @@ textarea {
   outline: none;
 }
 
-div {
+/* div {
   display: block;
-}
+} */
 
 .cpYcEZ:focus {
   border-bottom-color: black;
