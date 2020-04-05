@@ -1,35 +1,35 @@
-*,
-::before,
-::after {
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: rgb(31, 30, 30);
+  /* A system font stack so things load nice and quick! */
   color: whitesmoke;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
+  /* font-weight: 700; */
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-h1 {
-  color: black;
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-button {
-  color: white;
-}
-
-.card-img,
-iframe {
-  border: white solid;
-  width: 100%;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  margin-bottom: 4rem;
+/* Body config */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* Background Image w/ parallax effect */
+  background-image: url("../images/WooFFTEbwnew.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: calc(100vh - 100px);
+  background-size: minmax(auto);
+  line-height: 1.5rem;
 }
 
 .hvr-underline-from-center {
