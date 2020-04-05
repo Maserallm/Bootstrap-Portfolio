@@ -116,3 +116,17 @@ a {
   font-weight: 500;
   font-size: 30px;
 }
+
+/* Container with Skills */
+#mini-resume {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  padding: 5% 5%;
+}
+
+#mini-resume svg {
+  width: 20%;
+  margin: 10px;
+}
